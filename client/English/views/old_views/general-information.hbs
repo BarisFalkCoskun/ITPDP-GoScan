@@ -1,0 +1,43 @@
+<div class="two-row-menu container">
+  <div class="row menu">
+    {{#if topMenuText}}
+      <span id="text" aria-hidden="true">
+        <div class="ingredients">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">{{name}}</th>
+              </tr>
+            </thead>
+            <tbody>
+            {{#each topMenuText}}
+              <tr>
+                <td>{{@key}}</td>
+                <td>{{this}}</td>
+              </tr>
+            {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </span>
+      <span id="info" role="alert" aria-atomic="true">
+        <div class="ingredients"></div>
+      </span>
+      {{else}}
+        <span id="text" aria-hidden="true"><p>Sorry, no nutritional content was found.</p></span>
+        <span id="info" role="alert" aria-atomic="true">
+          <div></div>
+        </span>
+    {{/if}}
+  </div>
+  <div class="menu">
+    <button class="bottom-left menu" id="readNutritions">
+      <p>{{bottomLeftText}}</p>
+    </button>
+    <a href="{{bottomRightLink}}" class="menu bottom-right">
+      <div class="bottom-right menu">
+        <p>{{bottomRightText}}</p>
+      </div>
+    </a>
+  </div>
+</div>

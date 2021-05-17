@@ -1,0 +1,48 @@
+<div class="two-row-menu container" role="menu">
+  <div class="row menu">
+    {{#if topMenuText}}
+      <span id="text" aria-hidden="true" class="overflow">
+        <div class="ingredients" aria-disabled="true">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">{{name}}</th>
+              </tr>
+              <tr>
+                <th colspan="2">Nutrition Facts per 100 gram</th>
+              </tr>
+            </thead>
+            <tbody>
+            {{#each topMenuText}}
+              <tr>
+                <td>{{@key}}</td>
+                <td>{{this}}</td>
+              </tr>
+            {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </span>
+      <span id="info" role="alert" aria-atomic="true" class="overflow" aria-disabled="true">
+        <div class="ingredients"></div>
+      </span>
+    {{else}}
+      <span id="text" aria-hidden="true"><div class="paragraph">Sorry, no nutritional content was found for {{name}}.</div></span>
+      <span id="info" role="alert" aria-atomic="true">
+        <div class="paragraph"></div>
+      </span>
+    {{/if}}
+  </div>
+  <div class="menu">
+    <button class="bottom-left menu center-block" id="readNutritions" role="menuitem" aria-labelledby="bottomLeftHeader" aria-describedby="bottomLeftDescription">
+      <p id="bottomLeftHeader">{{bottomLeftText}}</p>
+      <p id="bottomLeftDescription" aria-hidden="false" class="hidden">{{bottomLeftDescription}}</p>
+    </button>
+    <a href="{{bottomRightLink}}" class="menu bottom-right" role="menuitem" aria-labelledby="bottomRightHeader" aria-describedby="bottomRightDescription">
+      <div class="bottom-right menu">
+        <p id="bottomRightHeader">{{bottomRightText}}</p>
+        <p id="bottomRightDescription" aria-hidden="false" class="hidden">{{bottomRightDescription}}</p>
+      </div>
+    </a>
+  </div>
+</div>

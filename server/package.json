@@ -1,0 +1,26 @@
+{
+  "name": "goscanserver",
+  "version": "1.0.0",
+  "description": "GoScan server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://boris@84.238.57.220:43238/home/boris/GoScan/project.git/"
+  },
+  "author": "Boris",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^0.1.0",
+    "archiver": "^2.1.1",
+    "better-sqlite3": "^4.1.0",
+    "body-parser": "^1.18.2",
+    "cloudsight": "^1.1.3",
+    "compression": "^1.7.2",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {}
+}

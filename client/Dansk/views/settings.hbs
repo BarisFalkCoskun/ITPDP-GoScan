@@ -1,0 +1,28 @@
+<div role="menu" aria-labelledby="mainHeader" aria-describedby="mainDescription" class="two-column-menu container">
+  <div class="menu column">
+    <div class="row">
+      <h1 id="mainHeader">{{mainHeader}}</h1>
+      <p id="mainDescription" aria-hidden="false" class="hidden">{{mainDescription}}</p>
+      <div class="main-item">
+        <form method="POST" action="{{sendTo}}">
+          {{#each groups}}
+            {{#if checked}}
+            <input type="hidden" name="{{{name}}}" value="false">
+            <input aria-checked="true" type="checkbox" name="{{{name}}}" value="true" id="{{{name}}}" checked role="menuitemcheckbox"><label for="{{{name}}}">{{{name}}}</label><br>
+            {{else}}
+            <input aria-checked="false" type="checkbox" name="{{{name}}}" value="true" id="{{{name}}}" role="menuitemcheckbox"><label for="{{{name}}}">{{{name}}}</label><br>
+            {{/if}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  <div class="column menu row">
+    <input type="submit" value="{{topRightText}}" class="top-right menu center-block" role="menuitem" aria-label="{{topRightDescription}}">
+    <a href="user-settings" class="menu bottom-right" role="menuitem" aria-labelledby="bottomRightText" aria-describedby="bottomRightDescription">
+      <div class="menu">
+        <p id="bottomRightText">{{bottomRightText}}</p>
+        <p id="bottomRightDescription" aria-hidden="false" class="hidden">{{bottomRightDescription}}</p>
+      </div>
+    </a>
+  </div>
+</div>

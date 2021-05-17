@@ -1,0 +1,28 @@
+{
+  "name": "goscanclient",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Boris",
+  "license": "ISC",
+  "dependencies": {
+    "audiosprite": "^0.7.1",
+    "better-sqlite3": "^4.1.1",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.2",
+    "decompress": "^4.2.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11",
+    "node-webcam": "^0.4.3",
+    "onoff": "^1.2.0",
+    "play-sound": "^1.1.2",
+    "request": "^2.87.0",
+    "archiver": "^2.1.1",
+    "usb-barcode-transform": "^1.0.2"
+  },
+  "description": ""
+}

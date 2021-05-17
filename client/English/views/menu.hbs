@@ -1,0 +1,31 @@
+{{#if mainHeader}}
+<div class="four-box-menu container" role="menu" aria-labelledby="mainHeader">
+  <h1 id="mainHeader" aria-hidden="false" class="hidden">{{mainHeader}}</h1>
+{{else}}
+<div class="four-box-menu container" role="menu">
+{{/if}}
+  <a href="{{topRightLink}}" class="menu" role="menuitem" aria-labelledby="topRightHeader" aria-describedby="topRightDescription">
+    <div class="top-right menu barcode">
+      <p id="topRightHeader">{{topRightText}}</p>
+      <p id="topRightDescription" aria-hidden="false" class="hidden">{{topRightDescription}}</p>
+    </div>
+  </a>
+  <a href="{{topLeftLink}}" class="menu" role="menuitem" aria-labelledby="topLeftHeader" aria-describedby="topLeftDescription">
+    <div class="top-left menu camera">
+      <p id="topLeftHeader">{{topLeftText}}</p>
+      <p id="topLeftDescription" aria-hidden="false" class="hidden">{{topLeftDescription}}</p>
+    </div>
+  </a>
+  <a href="{{bottomLeftLink}}" class="menu" role="menuitem" aria-labelledby="bottomLeftHeader" aria-describedby="bottomLeftDescription">
+    <div class="bottom-left menu">
+      <p id="bottomLeftHeader">{{bottomLeftText}}</p>
+      <p id="bottomLeftDescription" aria-hidden="false" class="hidden">{{bottomLeftDescription}}</p>
+    </div>
+  </a>
+  <a href="{{bottomRightLink}}" class="menu" role="menuitem" aria-labelledby="bottomRightHeader" aria-describedby="bottomRightDescription">
+    <div class="bottom-right menu">
+      <p id="bottomRightHeader">{{bottomRightText}}</p>
+      <p id="bottomRightDescription" aria-hidden="false" class="hidden">{{bottomRightDescription}}</p>
+    </div>
+  </a>
+</div>

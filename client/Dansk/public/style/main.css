@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+.paragraph {
+  margin: 0;
+  text-align: center;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#container {
+  height: 100%;
+}
+
+.container {
+  flex-wrap: wrap;
+  height: 100vh;
+  display: flex;
+}
+
+.two-column-menu {
+  flex-direction: row;
+}
+
+.two-row-menu {
+  flex-direction: column;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  flex: 50%;
+}
+
+.menu a {
+  align-items: center;
+}
+
+.menu p {
+  align-self: center;
+}
+
+.top-right {
+  background-color: tomato;
+}
+
+.top-left {
+  background-color: deepskyblue;
+}
+
+.bottom-left {
+  background-color: gold;
+}
+
+.bottom-right {
+  background-color: hotpink;
+}
+
+label {
+  padding: 3%;
+  margin: 3%;
+}
+
+label, td  {
+  text-transform: capitalize;
+}
+
+input[type="submit"] {
+  border-radius: 0;
+}
+
+.ingredients {
+  display: flex;
+  justify-content: center;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  padding: 3px 20px;
+}
+
+.overflow {
+  overflow: visible;
+}
+
+.center-block {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
